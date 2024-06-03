@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15a6a9f2b8bca67b653a1f608a2821ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_15a6a9f2b8bca67b653a1f608a2821ba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_15a6a9f2b8bca67b653a1f608a2821ba = L.map(
+                "map_15a6a9f2b8bca67b653a1f608a2821ba",
+                {
+                    center: [59.94, 30.3133],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d336f9cf4cdc28f44bae8b2c5303e067 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d336f9cf4cdc28f44bae8b2c5303e067.addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+            var marker_1517484dffa93914aef7d9f254d3dbc9 = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_a65918bc6d35dfbc6f56ef02cf49c120 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2c53c10ad76cc7e39a6a281d1e31176 = $(`<div id="html_c2c53c10ad76cc7e39a6a281d1e31176" style="width: 100.0%; height: 100.0%;">Hermitage Museum St. Petersburg</div>`)[0];
+                popup_a65918bc6d35dfbc6f56ef02cf49c120.setContent(html_c2c53c10ad76cc7e39a6a281d1e31176);
+            
+        
+
+        marker_1517484dffa93914aef7d9f254d3dbc9.bindPopup(popup_a65918bc6d35dfbc6f56ef02cf49c120)
+        ;
+
+        
+    
+    
+            var marker_49872540eb767cf6e01cd70d388f302c = L.marker(
+                [50.4269, 30.5536],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_eaf5720cbce075085437f400cf90770e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd962f61c9cb6d679b4e4b2a669ef0b0 = $(`<div id="html_fd962f61c9cb6d679b4e4b2a669ef0b0" style="width: 100.0%; height: 100.0%;">Kiev-Pechersk Lavra</div>`)[0];
+                popup_eaf5720cbce075085437f400cf90770e.setContent(html_fd962f61c9cb6d679b4e4b2a669ef0b0);
+            
+        
+
+        marker_49872540eb767cf6e01cd70d388f302c.bindPopup(popup_eaf5720cbce075085437f400cf90770e)
+        ;
+
+        
+    
+    
+            var marker_17dd394153066811f12ad6521437ba00 = L.marker(
+                [55.7525, 37.6083],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_5e5a9371fef445d43cfee84331e8f022 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8086d2a74312e2bc3e9d92cbc6ffac68 = $(`<div id="html_8086d2a74312e2bc3e9d92cbc6ffac68" style="width: 100.0%; height: 100.0%;">The State Historical Museum Moscow</div>`)[0];
+                popup_5e5a9371fef445d43cfee84331e8f022.setContent(html_8086d2a74312e2bc3e9d92cbc6ffac68);
+            
+        
+
+        marker_17dd394153066811f12ad6521437ba00.bindPopup(popup_5e5a9371fef445d43cfee84331e8f022)
+        ;
+
+        
+    
+    
+            var marker_45ed36359c1deecfc360d3834430310e = L.marker(
+                [55.7518, 37.6176],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_a38b4b631e226bd5721cc34d1a17c044 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12d51bc72b86285e947762c487df9d48 = $(`<div id="html_12d51bc72b86285e947762c487df9d48" style="width: 100.0%; height: 100.0%;">The Kremlin Armoury Moscow</div>`)[0];
+                popup_a38b4b631e226bd5721cc34d1a17c044.setContent(html_12d51bc72b86285e947762c487df9d48);
+            
+        
+
+        marker_45ed36359c1deecfc360d3834430310e.bindPopup(popup_a38b4b631e226bd5721cc34d1a17c044)
+        ;
+
+        
+    
+    
+            var marker_dd195feef75ec9f0e4baf3e9c702c1fd = L.marker(
+                [59.9399, 30.3149],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_7fac56666bbea8b8976867efc56ffeb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5526475af044549f57790201fd934100 = $(`<div id="html_5526475af044549f57790201fd934100" style="width: 100.0%; height: 100.0%;">State Museum of Political History St. Petersburg</div>`)[0];
+                popup_7fac56666bbea8b8976867efc56ffeb9.setContent(html_5526475af044549f57790201fd934100);
+            
+        
+
+        marker_dd195feef75ec9f0e4baf3e9c702c1fd.bindPopup(popup_7fac56666bbea8b8976867efc56ffeb9)
+        ;
+
+        
+    
+    
+            var marker_dcc63a15a6346da2359d35a975c3920b = L.marker(
+                [55.824, 37.6176],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_2cb3584aef475c038b832e477df52106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_103b151b603f8bfa0e1c2ac214b8b680 = $(`<div id="html_103b151b603f8bfa0e1c2ac214b8b680" style="width: 100.0%; height: 100.0%;">Memorial Museum of Cosmonautics Moscow</div>`)[0];
+                popup_2cb3584aef475c038b832e477df52106.setContent(html_103b151b603f8bfa0e1c2ac214b8b680);
+            
+        
+
+        marker_dcc63a15a6346da2359d35a975c3920b.bindPopup(popup_2cb3584aef475c038b832e477df52106)
+        ;
+
+        
+    
+    
+            var marker_4516a17d03b101c9032de06e40a2c606 = L.marker(
+                [55.7571, 37.6176],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_e06194038d7f27d966c3126c508a4f29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72794b46b6c660dc9e6d98862b4169ec = $(`<div id="html_72794b46b6c660dc9e6d98862b4169ec" style="width: 100.0%; height: 100.0%;">The Diamond Fund Moscow</div>`)[0];
+                popup_e06194038d7f27d966c3126c508a4f29.setContent(html_72794b46b6c660dc9e6d98862b4169ec);
+            
+        
+
+        marker_4516a17d03b101c9032de06e40a2c606.bindPopup(popup_e06194038d7f27d966c3126c508a4f29)
+        ;
+
+        
+    
+    
+            var marker_34d6c270a409f76ba105cdd1741ca98d = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_303aa3a815e5ee9fceda669690b23f2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8f828b01fd0ec1ec1dd257b2f50fe58 = $(`<div id="html_c8f828b01fd0ec1ec1dd257b2f50fe58" style="width: 100.0%; height: 100.0%;">State Hermitage Museum St. Petersburg</div>`)[0];
+                popup_303aa3a815e5ee9fceda669690b23f2c.setContent(html_c8f828b01fd0ec1ec1dd257b2f50fe58);
+            
+        
+
+        marker_34d6c270a409f76ba105cdd1741ca98d.bindPopup(popup_303aa3a815e5ee9fceda669690b23f2c)
+        ;
+
+        
+    
+    
+            var marker_81ffa3e59a024f01b6b4f770c65c9d19 = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_3b9319232ac31f4746c81e74ca67d0c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_131b6d3cc08ff51ffe8f22859ce037ac = $(`<div id="html_131b6d3cc08ff51ffe8f22859ce037ac" style="width: 100.0%; height: 100.0%;">Hermitage Museum St. Petersburg</div>`)[0];
+                popup_3b9319232ac31f4746c81e74ca67d0c0.setContent(html_131b6d3cc08ff51ffe8f22859ce037ac);
+            
+        
+
+        marker_81ffa3e59a024f01b6b4f770c65c9d19.bindPopup(popup_3b9319232ac31f4746c81e74ca67d0c0)
+        ;
+
+        
+    
+    
+            var marker_295bd33ac525a4063c9e77e5df6f0573 = L.marker(
+                [58.5229, 31.2693],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_92bd1e00b2577d58d8918d45bf783e2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a1d3eb9c3f7b193123cad67c1d235f08 = $(`<div id="html_a1d3eb9c3f7b193123cad67c1d235f08" style="width: 100.0%; height: 100.0%;">Novgorod State United Museum Novgorod</div>`)[0];
+                popup_92bd1e00b2577d58d8918d45bf783e2c.setContent(html_a1d3eb9c3f7b193123cad67c1d235f08);
+            
+        
+
+        marker_295bd33ac525a4063c9e77e5df6f0573.bindPopup(popup_92bd1e00b2577d58d8918d45bf783e2c)
+        ;
+
+        
+    
+    
+            var marker_02815b5c920bbe12d304be0192f5b124 = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_8f6685fbd0bec36ae1817eb19c816de4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82e9bab876831a7ada89c40f64520e53 = $(`<div id="html_82e9bab876831a7ada89c40f64520e53" style="width: 100.0%; height: 100.0%;">The State Hermitage Museum St. Petersburg</div>`)[0];
+                popup_8f6685fbd0bec36ae1817eb19c816de4.setContent(html_82e9bab876831a7ada89c40f64520e53);
+            
+        
+
+        marker_02815b5c920bbe12d304be0192f5b124.bindPopup(popup_8f6685fbd0bec36ae1817eb19c816de4)
+        ;
+
+        
+    
+    
+            var marker_7fcf29d1b29c11dd188c21d19f5deae5 = L.marker(
+                [55.7525, 37.6083],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_7afccf740d806fd218192d6371804d02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a11f71c014fa50d6ae4173cbc8aa6699 = $(`<div id="html_a11f71c014fa50d6ae4173cbc8aa6699" style="width: 100.0%; height: 100.0%;">Museum of the History of Moscow</div>`)[0];
+                popup_7afccf740d806fd218192d6371804d02.setContent(html_a11f71c014fa50d6ae4173cbc8aa6699);
+            
+        
+
+        marker_7fcf29d1b29c11dd188c21d19f5deae5.bindPopup(popup_7afccf740d806fd218192d6371804d02)
+        ;
+
+        
+    
+    
+            var marker_2a8d1989ceb7c284fa959181d92677dd = L.marker(
+                [55.7411, 37.6205],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_749dbf9022980aff7c99e726a62821f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f477ae6620339f3d0e9bf60f55a7148b = $(`<div id="html_f477ae6620339f3d0e9bf60f55a7148b" style="width: 100.0%; height: 100.0%;">Tretyakov Gallery Moscow</div>`)[0];
+                popup_749dbf9022980aff7c99e726a62821f0.setContent(html_f477ae6620339f3d0e9bf60f55a7148b);
+            
+        
+
+        marker_2a8d1989ceb7c284fa959181d92677dd.bindPopup(popup_749dbf9022980aff7c99e726a62821f0)
+        ;
+
+        
+    
+    
+            var marker_1607032e3117f9ad5a416f7ec2b388e7 = L.marker(
+                [52.2978, 104.2964],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_1027fbeb53e32dea9b405e3ebb7961b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a334cb932b93e93097386e9a9d784999 = $(`<div id="html_a334cb932b93e93097386e9a9d784999" style="width: 100.0%; height: 100.0%;">Museum of Regional Studies Irkutsk</div>`)[0];
+                popup_1027fbeb53e32dea9b405e3ebb7961b0.setContent(html_a334cb932b93e93097386e9a9d784999);
+            
+        
+
+        marker_1607032e3117f9ad5a416f7ec2b388e7.bindPopup(popup_1027fbeb53e32dea9b405e3ebb7961b0)
+        ;
+
+        
+    
+    
+            var marker_190dbd3c64763d13700070da74714f1a = L.marker(
+                [59.6869, 30.456],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_819fdcc798a058d4cb7996fb8db1b2d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44b6ce7600bd5b50d1eb56c987a67d6b = $(`<div id="html_44b6ce7600bd5b50d1eb56c987a67d6b" style="width: 100.0%; height: 100.0%;">Pavlovsk Palace St. Petersburg</div>`)[0];
+                popup_819fdcc798a058d4cb7996fb8db1b2d8.setContent(html_44b6ce7600bd5b50d1eb56c987a67d6b);
+            
+        
+
+        marker_190dbd3c64763d13700070da74714f1a.bindPopup(popup_819fdcc798a058d4cb7996fb8db1b2d8)
+        ;
+
+        
+    
+    
+            var marker_d06c9695ce6c5a53c117fec142ca34b0 = L.marker(
+                [56.8597, 35.9172],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_2324478db4340ad4d96e7852ceac6b2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81f064f1a32b1f1ad977e6890722b84c = $(`<div id="html_81f064f1a32b1f1ad977e6890722b84c" style="width: 100.0%; height: 100.0%;">State Historical Architectural and Art Museum Reserve Tver</div>`)[0];
+                popup_2324478db4340ad4d96e7852ceac6b2a.setContent(html_81f064f1a32b1f1ad977e6890722b84c);
+            
+        
+
+        marker_d06c9695ce6c5a53c117fec142ca34b0.bindPopup(popup_2324478db4340ad4d96e7852ceac6b2a)
+        ;
+
+        
+    
+    
+            var marker_f1c603a68e465c5f12a8f6a209a6b860 = L.marker(
+                [59.9399, 30.3149],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_28d4a7931569e8942d1ea1c4c53a29aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa215462cf2b48e6972740f1cd2146a6 = $(`<div id="html_fa215462cf2b48e6972740f1cd2146a6" style="width: 100.0%; height: 100.0%;">Museum of Political History St. Petersburg</div>`)[0];
+                popup_28d4a7931569e8942d1ea1c4c53a29aa.setContent(html_fa215462cf2b48e6972740f1cd2146a6);
+            
+        
+
+        marker_f1c603a68e465c5f12a8f6a209a6b860.bindPopup(popup_28d4a7931569e8942d1ea1c4c53a29aa)
+        ;
+
+        
+    
+    
+            var marker_b300611891de015111f05b6db37fdd58 = L.marker(
+                [55.7502, 37.5666],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_8dfb4269de7a0c7694eb17d87e7e5f6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44d789ed6ad59876ef69dff70d5705cd = $(`<div id="html_44d789ed6ad59876ef69dff70d5705cd" style="width: 100.0%; height: 100.0%;">Central Armed Forces Museum Moscow</div>`)[0];
+                popup_8dfb4269de7a0c7694eb17d87e7e5f6f.setContent(html_44d789ed6ad59876ef69dff70d5705cd);
+            
+        
+
+        marker_b300611891de015111f05b6db37fdd58.bindPopup(popup_8dfb4269de7a0c7694eb17d87e7e5f6f)
+        ;
+
+        
+    
+    
+            var marker_31bb68e17147e263366bed56b3175239 = L.marker(
+                [54.5168, 36.2561],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_2ae2fa624075a5b38409407b2cae025f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a32c9b538867041862f82f07b9bc7a97 = $(`<div id="html_a32c9b538867041862f82f07b9bc7a97" style="width: 100.0%; height: 100.0%;">Russian Space Museum Kaluga</div>`)[0];
+                popup_2ae2fa624075a5b38409407b2cae025f.setContent(html_a32c9b538867041862f82f07b9bc7a97);
+            
+        
+
+        marker_31bb68e17147e263366bed56b3175239.bindPopup(popup_2ae2fa624075a5b38409407b2cae025f)
+        ;
+
+        
+    
+    
+            var marker_1ae290585a57a66cca28c5479ca407ff = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_277f90b635c899d3bb12cd24f99b9d48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c156cf93a40a259b66f5856c0faedba = $(`<div id="html_2c156cf93a40a259b66f5856c0faedba" style="width: 100.0%; height: 100.0%;">State Hermitage Museum St. Petersburg</div>`)[0];
+                popup_277f90b635c899d3bb12cd24f99b9d48.setContent(html_2c156cf93a40a259b66f5856c0faedba);
+            
+        
+
+        marker_1ae290585a57a66cca28c5479ca407ff.bindPopup(popup_277f90b635c899d3bb12cd24f99b9d48)
+        ;
+
+        
+    
+    
+            var marker_58e500af4459eea993d830ed455d8f3a = L.marker(
+                [54.738, 55.9747],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_0637ef7d259a399abcc88083684e6905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87a80c4dcb2f7600a59f93049816e181 = $(`<div id="html_87a80c4dcb2f7600a59f93049816e181" style="width: 100.0%; height: 100.0%;">Museum of Nature and Man Ufa</div>`)[0];
+                popup_0637ef7d259a399abcc88083684e6905.setContent(html_87a80c4dcb2f7600a59f93049816e181);
+            
+        
+
+        marker_58e500af4459eea993d830ed455d8f3a.bindPopup(popup_0637ef7d259a399abcc88083684e6905)
+        ;
+
+        
+    
+    
+            var marker_69936d54f8b4669244e0bc5b6ca09410 = L.marker(
+                [59.9354, 30.3254],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_2584bad4cdda55e0e00694308ea7267d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90223b6c5a8b1254e0beb4adfbc79c21 = $(`<div id="html_90223b6c5a8b1254e0beb4adfbc79c21" style="width: 100.0%; height: 100.0%;">Fabergé Museum St. Petersburg</div>`)[0];
+                popup_2584bad4cdda55e0e00694308ea7267d.setContent(html_90223b6c5a8b1254e0beb4adfbc79c21);
+            
+        
+
+        marker_69936d54f8b4669244e0bc5b6ca09410.bindPopup(popup_2584bad4cdda55e0e00694308ea7267d)
+        ;
+
+        
+    
+    
+            var marker_0e6224015201801308df22bf6c1a592c = L.marker(
+                [55.7941, 49.1117],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_888835b6328bb55f24bd9c143c8d2d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_420a44edc38dd7bba50ee5007f45ff77 = $(`<div id="html_420a44edc38dd7bba50ee5007f45ff77" style="width: 100.0%; height: 100.0%;">State Museum of Fine Arts of the Republic of Tatarstan Kazan</div>`)[0];
+                popup_888835b6328bb55f24bd9c143c8d2d55.setContent(html_420a44edc38dd7bba50ee5007f45ff77);
+            
+        
+
+        marker_0e6224015201801308df22bf6c1a592c.bindPopup(popup_888835b6328bb55f24bd9c143c8d2d55)
+        ;
+
+        
+    
+    
+            var marker_93609b53cbc8a313c90d5fc26bc5861e = L.marker(
+                [59.9399, 30.3149],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_d5de9439564894c20c0f7850cec0c3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_516385f426fdc48322accea3c2bf6f96 = $(`<div id="html_516385f426fdc48322accea3c2bf6f96" style="width: 100.0%; height: 100.0%;">Museum of Political History St. Petersburg</div>`)[0];
+                popup_d5de9439564894c20c0f7850cec0c3c7.setContent(html_516385f426fdc48322accea3c2bf6f96);
+            
+        
+
+        marker_93609b53cbc8a313c90d5fc26bc5861e.bindPopup(popup_d5de9439564894c20c0f7850cec0c3c7)
+        ;
+
+        
+    
+    
+            var marker_527175be001903ad798aa62d7f8a18b7 = L.marker(
+                [54.5168, 36.2561],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_cfcaaef734772520ca8c3f6694d8a3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cca9d37e33433c04722ee210b752bba = $(`<div id="html_7cca9d37e33433c04722ee210b752bba" style="width: 100.0%; height: 100.0%;">Russian Space Museum Kaluga</div>`)[0];
+                popup_cfcaaef734772520ca8c3f6694d8a3c7.setContent(html_7cca9d37e33433c04722ee210b752bba);
+            
+        
+
+        marker_527175be001903ad798aa62d7f8a18b7.bindPopup(popup_cfcaaef734772520ca8c3f6694d8a3c7)
+        ;
+
+        
+    
+    
+            var marker_994e72ed1e6f5389ef58ec57e6551d1d = L.marker(
+                [59.94, 30.3133],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_49d48ddd64ad2ee5fff00a7a773bd670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e04489eb2ce93be33dcc81f884cd2dd2 = $(`<div id="html_e04489eb2ce93be33dcc81f884cd2dd2" style="width: 100.0%; height: 100.0%;">The State Hermitage Museum St. Petersburg</div>`)[0];
+                popup_49d48ddd64ad2ee5fff00a7a773bd670.setContent(html_e04489eb2ce93be33dcc81f884cd2dd2);
+            
+        
+
+        marker_994e72ed1e6f5389ef58ec57e6551d1d.bindPopup(popup_49d48ddd64ad2ee5fff00a7a773bd670)
+        ;
+
+        
+    
+    
+            var marker_b46bd26d3696a1e5055d5de7725af420 = L.marker(
+                [59.7169, 30.3961],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_d9c36e62c8829f72e6c1b3ced9e45182 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fe7587ffc5f46f8f6efe0673692352a = $(`<div id="html_1fe7587ffc5f46f8f6efe0673692352a" style="width: 100.0%; height: 100.0%;">Catherine Palace St. Petersburg</div>`)[0];
+                popup_d9c36e62c8829f72e6c1b3ced9e45182.setContent(html_1fe7587ffc5f46f8f6efe0673692352a);
+            
+        
+
+        marker_b46bd26d3696a1e5055d5de7725af420.bindPopup(popup_d9c36e62c8829f72e6c1b3ced9e45182)
+        ;
+
+        
+    
+    
+            var marker_bd3cb8b0421056d7bc66f369b1424922 = L.marker(
+                [52.2978, 104.2964],
+                {}
+            ).addTo(map_15a6a9f2b8bca67b653a1f608a2821ba);
+        
+    
+        var popup_2b307fb63dd584e5bf7397343976e70e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_797b3490bd16f495ee5b905c44d1f768 = $(`<div id="html_797b3490bd16f495ee5b905c44d1f768" style="width: 100.0%; height: 100.0%;">Museum of Regional Studies Irkutsk</div>`)[0];
+                popup_2b307fb63dd584e5bf7397343976e70e.setContent(html_797b3490bd16f495ee5b905c44d1f768);
+            
+        
+
+        marker_bd3cb8b0421056d7bc66f369b1424922.bindPopup(popup_2b307fb63dd584e5bf7397343976e70e)
+        ;
+
+        
+    
+</script>
+</html>
